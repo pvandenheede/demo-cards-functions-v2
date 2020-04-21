@@ -7,16 +7,16 @@ namespace demo_cards_functions_v2.Models
     class PredictionResult
     {
         [JsonProperty(PropertyName = "id")]
-        public string id { get; set; }
+        public string Id { get; set; }
 
         [JsonProperty(PropertyName = "project")]
-        public string project { get; set; }
+        public string Project { get; set; }
 
         [JsonProperty(PropertyName = "iteration")]
-        public string iteration { get; set; }
+        public string Iteration { get; set; }
 
         [JsonProperty(PropertyName = "created")]
-        public DateTime created { get; set; }
+        public DateTime Created { get; set; }
 
         [JsonProperty(PropertyName = "predictions")]
         public List<Prediction> Predictions { get; set; }
