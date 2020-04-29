@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace demo_cards_functions_v2.Models
 {
-    class PredictionResult
+    public class PredictionResult
     {
         [JsonProperty(PropertyName = "id")]
         public string Id { get; set; }

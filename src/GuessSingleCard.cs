@@ -14,11 +14,9 @@ namespace demo_cards_functions_v2
 {
     public static class GuessSingleCard
     {
-        
-
         [FunctionName("GuessSingleCard")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
             ILogger log,
             ExecutionContext context)
         {
@@ -34,7 +32,6 @@ namespace demo_cards_functions_v2
 
             if (highestScoringPrediction != null)
             {
-
                 var dynResult = new { 
                         Tag = highestScoringPrediction.TagName,
                         Probability = highestScoringPrediction.Probability, 

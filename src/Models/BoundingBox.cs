@@ -2,7 +2,7 @@
 
 namespace demo_cards_functions_v2.Models
 {
-    class BoundingBox
+    public class BoundingBox
     {
         [JsonProperty(PropertyName = "left")]
         public double Left { get; set; }

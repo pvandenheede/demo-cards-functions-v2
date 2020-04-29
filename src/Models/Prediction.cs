@@ -2,7 +2,7 @@
 
 namespace demo_cards_functions_v2.Models
 {
-    class Prediction
+    public class Prediction
     {
         [JsonProperty(PropertyName = "probability")]
         public double Probability { get; set; }

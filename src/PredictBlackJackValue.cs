@@ -18,7 +18,7 @@ namespace demo_cards_functions_v2
     {
         [FunctionName("PredictBlackJackValue")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
             ILogger log,
             ExecutionContext context)
         {
@@ -76,11 +76,11 @@ namespace demo_cards_functions_v2
             int cardIndex = 1;
 
             Card card1 = new Card { Tag = "none" };
-            Card card2 = new Card { Tag = "none" }; ;
-            Card card3 = new Card { Tag = "none" }; ;
-            Card card4 = new Card { Tag = "none" }; ;
-            Card card5 = new Card { Tag = "none" }; ;
-            Card card6 = new Card { Tag = "none" }; ;
+            Card card2 = new Card { Tag = "none" };
+            Card card3 = new Card { Tag = "none" };
+            Card card4 = new Card { Tag = "none" };
+            Card card5 = new Card { Tag = "none" };
+            Card card6 = new Card { Tag = "none" };
 
             foreach (Card c in cards)
             {
